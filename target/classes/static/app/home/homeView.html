@@ -1,0 +1,566 @@
+<sale-image></sale-image>
+
+<library-header></library-header>
+
+<div class="container">
+    <div class="row header-bottom" >
+        <div class="col-md-3 col-sm-12 col-xs-12 category" style="padding:0px">
+            <div class="menu-heading">
+                <span class="glyphicon glyphicon-align-justify" style="color: white"></span><span>Danh mục ebook</span>
+            </div>
+            <ul>
+                <li ng-repeat="c in categoryData">
+                    <a ui-sref="category({categoryID: c.categoryID})">
+                        <span class="glyphicon glyphicon-play"></span>{{c.categoryName}}
+                    </a>
+                </li>
+                <li style="text-align: center;">
+                    <img src="assets/image/icon_xemall.gif" style="margin-bottom: 9px;">
+                    <a href="#" style="color: #65B5A7;text-decoration: none;">Xem tất cả</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-md-9 col-sm-12 col-xs-12">
+            <div class="row nav">
+                <div class="col-md-8 col-sm-8 col-xs-12 nav-left">
+                    <ul>
+                        <li><a href="">KOMO TOP</a></li>
+                        <li style="padding-left: 40px"><a href="">KOMO</a></li>
+                        <li style="padding-left: 40px"><a href="">MY KOMO</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 col-sm-4 hidden-xs nav-right">
+                    <ul>
+                        <li><a href="#"><img src="assets/image/mn_blog.png"></a></li>
+                        <li><a href="#"><img src="assets/image/mn_taiapp.png"></a></li>
+                    </ul>
+                </div>
+
+                <div class="visible-xs nav-right" style="margin: 0 auto;width: 62%">
+                    <ul>
+                        <li><a href="#"><img src="assets/image/mn_blog.png"></a></li>
+                        <li><a href="#"><img src="assets/image/mn_taiapp.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 hidden-sm hidden-xs" style="padding-right: 0px;">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                            <li data-target="#myCarousel" data-slide-to="4"></li>
+                            <li data-target="#myCarousel" data-slide-to="5"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                               <a href=""> <img src="assets/image/001.jpg" alt="Chania" width="100%" height="345"></a>
+                            </div>
+
+                            <div class="item">
+                                <a href=""><img src="assets/image/003.jpg" alt="Chania" width="100%" height="345"></a>
+                            </div>
+
+                            <div class="item">
+                                <a href=""><img src="assets/image/004.jpg" alt="Chania" width="100%" height="345"></a>
+                            </div>
+
+                            <div class="item">
+                                <a href=""><img src="assets/image/002.jpg" alt="Flower" width="100%" height="345"></a>
+                            </div>
+
+                            <div class="item">
+                                <a href=""><img src="assets/image/005.jpg" alt="Flower" width="100%" height="345"></a>
+                            </div>
+
+                            <div class="item">
+                                <a href=""><img src="assets/image/006.jpg" alt="Flower" width="100%" height="345"></a>
+                            </div>
+
+                            <!-- Left and right controls -->
+                            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="visible-xs-block visible-sm-block">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                            <li data-target="#myCarousel" data-slide-to="4"></li>
+                            <li data-target="#myCarousel" data-slide-to="5"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="assets/image/003.jpg" alt="Chania" width="100%" height="345">
+                            </div>
+
+                            <div class="item">
+                                <img src="assets/image/004.jpg" alt="Chania" width="100%" height="345">
+                            </div>
+
+                            <div class="item">
+                                <img src="assets/image/002.jpg" alt="Flower" width="100%" height="345">
+                            </div>
+
+                            <div class="item">
+                                <img src="assets/image/005.jpg" alt="Flower" width="100%" height="345">
+                            </div>
+
+                            <div class="item">
+                                <img src="assets/image/006.jpg" alt="Flower" width="100%" height="345">
+                            </div>
+
+                            <!-- Left and right controls -->
+                            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- End header-bottom -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12 slide1" style="border: 1px solid #B0B1B9">
+            <slide-header></slide-header>
+        </div>
+    </div>
+    <div class="row featured-slider-nav">
+        <div class="col-md-4 col-md-offset-2 col-sm-6 col-xs-12">
+            <div style="background: url(assets/Image/hover_banner.png) no-repeat;background-size:100%;width: 300px;height:25px;text-align: center;margin-bottom: 2px;">
+                <a href="" style="color: #1FA998">KOMO khuyên đọc</a>
+            </div>
+        </div>
+        <div class="col-md-3 col-md-offset-3 col-sm-6 col-xs-12">
+            <a href="" style="color: white;padding-top: 2px;float:right;">Bán chạy nhất</a>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row content">
+        <div class="col-md-9 col-sm-9 col-xs-12 content-left">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <a href=""><img src="assets/image/430x98-banner-ebook-mienphi-tienganh1-jpg.jpg" width="100%"
+                                    height="100%"></a>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <a href=""><img src="assets/image/430x98-banner-ebook-mienphi-tiengviet-1-jpg.jpg" width="100%"
+                                    height="100%"></a>
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row hot">
+                    <h3>EBOOK MỚI & HOT</h3>
+                    <hr/>
+                    <book-hot></book-hot>
+                </div>
+                <div class="row ">
+                    <div class="col-md-12 col-sm-12 col-xs-12 ">
+                        <slide-new></slide-new>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-md-12 col-sm-12 col-xs-12 ">
+                        <h3>Sắp phát hành</h3>
+                        <hr/>
+                        <slide-release-preparation></slide-release-preparation>
+                    </div>
+                </div>
+                <div class="row bookcase">
+                    <div class="col-md-4 col-sm-4 col-md-4">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-12">
+                                <a ui-sref="categoryDetail"><img src="assets/image/306x158-5-banner-01.jpg" width="100%" height="150px" style="padding-bottom: 5px"></a>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-12">
+                                <a href=""><img src="assets/image/306x158-5-banner-02.jpg" width="100%" height="150px" style="padding-top: 5px;"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-md-4">
+                        <a href=""><img src="assets/image/253x321-b31c5442cbc7f98f29eabcca5eafd5324c55eae81d6d3d619d-pimgpsh-fullsize-distr.jpg" width="100%" height="300px"></a>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-md-4">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-12">
+                                <a href=""><img src="assets/image/306x158-5-banner-11-14-02.jpg" width="100%" height="150px" style="padding-bottom:5px"></a>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-12">
+                                <a href=""><img src="assets/image/306x158-5-banner-05.jpg" width="100%" height="150px" style="padding-top: 5px;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--End bookcase -->
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 ">
+                        <h3>Giáng Sinh ấm áp - Nhấp nháy Sách hay</h3>
+                        <hr/>
+                        <slide-giang-sinh></slide-giang-sinh>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 ">
+                        <h3>Kombo ebook mới nhất</h3>
+                        <hr/>
+                        <slide-combo></slide-combo>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href=""><img src="assets/image/433.5x187-banner-web-sai-gon-op1.jpg" width="100%"></a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href=""><img src="assets/image/433.5x187-sachhaydocquyenkomo.jpg" width="100%"></a>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <h3>Tác giả nổi bật</h3>
+                        <hr/>
+                        <div class="row">
+                            <div class="col-md-4 col-md-4 col-md-4">
+                                <a href=""><img src="assets/image/author/h7.png" width="100%"></a>
+                            </div>
+                            <div class="col-md-8 col-md-8 col-md-8">
+                                <h4>Lyman Frank Baum</h4>
+                                <p>Lyman Frank Baum (15/5/1856 – 6/5/1919) sinh ra tại Chittenango, New York, năm 1856, là nhà văn viết truyện thần thoại nổi tiếng nhất của nước Mỹ. Ông đã từng thử qua rất nhiều nghề nhưng đều không như ý, cho đến tuổi bốn mươi mới khẳng định được chân tài của mình trong việc viết truyện theo kiểu cổ tích thần kỳ. Trong khi ở Chicago, vợ ông, bà Maud đã giục ông viết ra những câu chuyện mà ông vẫn kể cho lũ trẻ con hàng xóm nghe mỗi tối. Phù thuỷ xứ Oz, câu chuyện đầu tiên được in vào năm 1900 trong số mười lăm câu chuyện dài về xứ Oz chính là tác phẩm nổi tiếng...</p>
+                            </div>
+                        </div>
+                        <!--<find-author-random author="author"></find-author-random>-->
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12 " style="margin-top: 25px;">
+                        <slide-by-author-hot></slide-by-author-hot>
+                    </div>
+                </div><!--- End author -->
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <marquee width="100%" bgcolor="white" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="3" behavior="alternate">
+                            <a href="img1.html"><img src="assets/image/nhataitro/h1.png" width="30%" height="50%" class="img-thumbnail"/></a>
+                            <a href="img3.html"><img src="assets/image/nhataitro/h3.jpg" width="30%" height="50%" class="img-thumbnail"/></a>
+                            <a href="img4.html"><img src="assets/image/nhataitro/h4.jpg" width="30%" height="50%" class="img-thumbnail"/></a>
+                            <a href="img5.html"><img src="assets/image/nhataitro/h5.jpg" width="30%" height="50%" class="img-thumbnail"/></a>
+                            <a href="img6.html"><img src="assets/image/nhataitro/h6.png" width="30%" height="50%" class="img-thumbnail"/></a>
+                            <a href="img7.html"><img src="assets/image/nhataitro/h7.png" width="30%" height="50%" class="img-thumbnail"/></a>
+                            <a href="img9.html"><img src="assets/image/nhataitro/h8.jpg" width="30%" height="50%"  class="img-thumbnail"/></a>
+                            <a href="img10.html"><img src="assets/image/nhataitro/h9.jpg" width="30%" height="50%" class="img-thumbnail"/></a>
+                            <a href="img1.html"><img src="assets/image/nhataitro/h10.jpg" width="30%" height="50%" class="img-thumbnail"/></a>
+                            <a href="img2.html"><img src="assets/image/nhataitro/h11.jpg" width="30%" height="50%" class="img-thumbnail"/></a>
+                            <a href="img2.html"><img src="assets/image/nhataitro/h12.png" width="30%" height="50%" class="img-thumbnail"/></a>
+                            <a href="img2.html"><img src="assets/image/nhataitro/h13.png" width="30%" height="50%" class="img-thumbnail"/></a>
+                            <a href="img2.html"><img src="assets/image/nhataitro/h14.png" width="30%" height="50%" class="img-thumbnail"/></a>
+                        </marquee>
+                    </div>
+                </div>
+                <div class="row introduce">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <p>
+                        <h3>KOMO và ứng dụng đọc ebook cho android, IOS - KOMO reader</h3>
+                        KOMO là một sản phẩm của công ty Cổ Phần Văn Hóa Phương Nam (PNC), ra đời vào ngày 26/03/2014, với hình thức kinh doanh ebook có bản quyền. Ebook của KOMO có giá rẻ hơn nhiều so với sách giấy, thông thường giá chỉ bằng 40% hoặc thậm chí 10% sách giấy. Ngoài tính năng Mua thông thường, KOMO còn có nhiều tính năng thú vị như THUÊ – TẶNG – MƯỢN/ CHO MƯỢN ebook giữa các thành viên trong cộng đồng KOMO. Để đọc được ebook của KOMO, độc giả phải tải ứng dụng đọc sách KOMO reader. Đây là một trong những ứng dụng đọc sách tốt nhất hiện nay.
+                        </p>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <iframe width="100%" height="300px" src="https://www.youtube.com/embed/21OwW6kAClQ" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12 introduce-check">
+                                <ul style="list-style-image: url('assets/image/icon_check.png')">
+                                    <li>Tải KOMO hoàn toàn miễn phí tại đây</li>
+                                    <li>Có thể đồng bộ cho 07 thiết bị khác nhau</li>
+                                    <li>Sử dụng định dạng EPUB và tương thích với nhiều thiết bị hệ điều hành phổ biến</li>
+                                    <li>Tự động lưu và đồng bộ trang đang đọc, dấu trang, những đoạn bôi đen, ghi chú</li>
+                                    <li>Có thể điều chỉnh kích cỡ và kiểu chữ để phù hợp với mắt người đọc nhất</li>
+                                    <li>Chia sẻ lên Facebook, Twitter, G+ sách hoặc đoạn nội dung yêu thích</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- End hot -->
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-12 content-right">
+            <div class="row sidebar-comment">
+                <div class="col-md-12 col-sm-12 col-xs-12 " style="padding: 0px;">
+                    <div style="background-color: #4E8F7C;width: 100%;">
+                        <h3>Bình luận độc giả</h3>
+                    </div>
+                    <div class="container" style="width: 100%;padding-bottom: 80px;">
+                        <h4>Anh Không Là Con Chó Của Em</h4>
+                        <img src="assets/image/icon_tacgia.png" width="8px"><span
+                            style="padding-left: 8px;">Lê Hoàng</span><br/>
+                        <h5 style="border: 1px solid #E8E7E5;border-radius: 10px;padding: 10px;margin:10px 0px 0px 0px;z-index: 1">
+                            Câu chuyện khá hư cấu nhưng rất hay và ý nghĩa.
+                        </h5>
+                        <center><img src="assets/image/comment-arrow.png" style="z-index: 2"></center>
+                        <center><span style="color: #F61465;font-weight: bold;">NNgoc Hân</span></center>
+                        <img src="assets/image/point.png" style="padding-bottom: 10px"><span style="padding-left: 10px">Điểm:</span><span
+                            style="float: right;">0</span><br/>
+                        <img src="assets/image/badge.png"><span style="padding-left: 10px">Phù Hiệu: </span><span
+                            style="float: right;">0</span><br/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row sidebar-rate">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12" style="padding: 0px">
+                            <div style="background-color:#4E8F7C;width: 100%">
+                                <h3>Xếp hạng tuần này</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row rate-component">
+                        <div class="col-md-1 col-sm-1 col-xs-1 number">
+                            <p>1</p>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-4" style="padding-right: 0px;">
+                            <a href="#"><img src="assets/image/doc_thu.png" width="100%"></a>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <h4>Anh Không Là Con Chó Của Em</h4>
+                            <img src="assets/image/icon_tacgia.png" width="8px"><span
+                                style="padding-left: 8px;color:#868686">Lê Hoàng</span><br/>
+                            <div class="img-rate"></div>
+                            <span style="color: #D31A64">45.000 đ</span>
+                        </div>
+                    </div>
+                    <div class="row rate-component">
+                        <div class="col-md-1 col-sm-1 col-xs-1 number">
+                            <p>2</p>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-4" style="padding-right: 0px;">
+                            <a href="#"><img src="assets/image/doc_thu.png" width="100%"></a>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <h4>Nói ít hiểu nhiều</h4>
+                            <img src="assets/image/icon_tacgia.png" width="8px"><span
+                                style="padding-left: 8px;color:#868686">Lê Hoàng</span><br/>
+                            <div class="img-rate"></div>
+                            <span style="color: #D31A64">35.000 đ</span>
+                        </div>
+                    </div>
+                    <div class="row rate-component">
+                        <div class="col-md-1 col-sm-1 col-xs-1 number">
+                            <p>3</p>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-4" style="padding-right: 0px;">
+                            <a href="#"><img src="assets/image/doc_thu.png" width="100%"></a>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <h4>Sách Của Những Câu Hỏi</h4>
+                            <img src="assets/image/icon_tacgia.png" width="8px"><span
+                                style="padding-left: 8px;color:#868686">Lê Hoàng</span><br/>
+                            <div class="img-rate"></div>
+                            <span style="color: #D31A64">45.000 đ</span>
+                        </div>
+                    </div>
+                    <div class="row rate-component">
+                        <div class="col-md-1 col-sm-1 col-xs-1 number">
+                            <p>4</p>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-4" style="padding-right: 0px;">
+                            <a href="#"><img src="assets/image/doc_thu.png" width="100%"></a>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <h4>Nhân Sinh Duy Tân</h4>
+                            <img src="assets/image/icon_tacgia.png" width="8px"><span
+                                style="padding-left: 8px;color:#868686">Lê Hoàng</span><br/>
+                            <div class="img-rate"></div>
+                            <span style="color: #D31A64">35.000 đ</span>
+                        </div>
+                    </div>
+                    <div class="row rate-component">
+                        <div class="col-md-1 col-sm-1 col-xs-1 number">
+                            <p>5</p>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-4" style="padding-right: 0px;">
+                            <a href="#"><img src="assets/image/doc_thu.png" width="100%"></a>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <h4>Báo Cáo Tài Chính</h4>
+                            <img src="assets/image/icon_tacgia.png" width="8px"><span
+                                style="padding-left: 8px;color:#868686">Lê Hoàng</span><br/>
+                            <div class="img-rate"></div>
+                            <span style="color: #D31A64">20.000 đ</span>
+                        </div>
+                    </div>
+                    <div class="row rate-component">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <center><img src="assets/image/icon_xemall.gif"><a href="#"
+                                                                               style="color: #65B5A7;text-decoration: none;">Xem
+                                tất cả</a></center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row sidebar-new">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12" style="padding: 0px">
+                            <div style="background-color:#4E8F7C;width: 100%; ">
+                                <h3>Tin mới từ KOMO's Blog</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-content" style="padding: 20px;">
+                        <ul>
+                            <li class="blog-link">
+                                <a title="24 bước khởi sự kinh doanh thành công với Kinh Điển Về Khởi Nghiệp" href="#"
+                                   target="_blank">24 bước khởi sự kinh doanh thành công với Kinh Điển...</a>
+                            </li>
+                            <li class="blog-link">
+                                <a title="4 ebook mới nhất của Thụy Vũ – nữ nhà văn nổi tiếng của miền Nam trước 1975"
+                                   href="#" target="_blank">4 ebook mới nhất của Thụy Vũ – nữ nhà văn nổi...</a>
+                            </li>
+                            <li class="blog-link">
+                                <a title="Cảm nhận phim W – Hai Thế Giới" href="#" target="_blank">Cảm nhận phim W – Hai
+                                    Thế Giới</a>
+                            </li>
+                            <li class="blog-link">
+                                <a title="Những cây cầu ở quận Madison: Khi trái tim dẫn lối…" href="#" target="_blank">Những
+                                    cây cầu ở quận Madison: Khi trái tim dẫn lối…</a>
+                            </li>
+                            <li class="blog-link">
+                                <a title="THỨ BA THÁI HÀ – Giảm 30% tất cả ebook Thái Hà Books tại KOMO" href="$"
+                                   target="_blank">THỨ BA THÁI HÀ – Giảm 30% tất cả ebook Thái Hà Books...</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row sidebar-download">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12" style="
+						padding: 0px;">
+                            <div style="background-color:#4E8F7C;width: 100%; ">
+                                <h3>Top Download Free</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row rate-component">
+                        <div class="col-md-1 col-sm-1 col-xs-1 number">
+                            <p>1</p>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-4" style="padding-right: 0px;">
+                            <a href="#"><img src="assets/image/doc_thu.png" width="100%"></a>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <h4>Anh Không Là Con Chó Của Em</h4>
+                            <img src="assets/image/icon_tacgia.png" width="8px"><span
+                                style="padding-left: 8px;color:#868686">Lê Hoàng</span><br/>
+                            <div class="img-rate"></div>
+                            <span style="color: #D31A64">Miễn phí</span>
+                        </div>
+                    </div>
+                    <div class="row rate-component">
+                        <div class="col-md-1 col-sm-1 col-xs-1 number">
+                            <p>2</p>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-4" style="padding-right: 0px;">
+                            <a href="#"><img src="assets/image/doc_thu.png" width="100%"></a>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <h4>Nói ít hiểu nhiều</h4>
+                            <img src="assets/image/icon_tacgia.png" width="8px"><span
+                                style="padding-left: 8px;color:#868686">Lê Hoàng</span><br/>
+                            <div class="img-rate"></div>
+                            <span style="color: #D31A64">Miễn phí</span>
+                        </div>
+                    </div>
+                    <div class="row rate-component">
+                        <div class="col-md-1 col-sm-1 col-xs-1 number">
+                            <p>3</p>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-4" style="padding-right: 0px;">
+                            <a href="#"><img src="assets/image/doc_thu.png" width="100%"></a>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <h4>Sách Của Những Câu Hỏi</h4>
+                            <img src="assets/image/icon_tacgia.png" width="8px"><span
+                                style="padding-left: 8px;color:#868686">Lê Hoàng</span><br/>
+                            <div class="img-rate"></div>
+                            <span style="color: #D31A64">Miễn phí</span>
+                        </div>
+                    </div>
+                    <div class="row rate-component">
+                        <div class="col-md-1 col-sm-1 col-xs-1 number">
+                            <p>4</p>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-4" style="padding-right: 0px;">
+                            <a href="#"><img src="assets/image/doc_thu.png" width="100%"></a>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <h4>Nhân Sinh Duy Tân</h4>
+                            <img src="assets/image/icon_tacgia.png" width="8px"><span
+                                style="padding-left: 8px;color:#868686">Lê Hoàng</span><br/>
+                            <div class="img-rate"></div>
+                            <span style="color: #D31A64">Miễn phí</span>
+                        </div>
+                    </div>
+                    <div class="row rate-component">
+                        <div class="col-md-1 col-sm-1 col-xs-1 number">
+                            <p>5</p>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-4" style="padding-right: 0px;">
+                            <a href="#"><img src="assets/image/doc_thu.png" width="100%"></a>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <h4>Báo Cáo Tài Chính</h4>
+                            <img src="assets/image/icon_tacgia.png" width="8px"><span
+                                style="padding-left: 8px;color:#868686">Lê Hoàng</span><br/>
+                            <div class="img-rate"></div>
+                            <span style="color: #D31A64">Miễn phí</span>
+                        </div>
+                    </div>
+                    <div class="row rate-component">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <center><img src="assets/image/icon_xemall.gif"><a href="#"
+                                                                               style="color: #65B5A7;text-decoration: none;">Xem
+                                tất cả</a></center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- End content -->
+
+<library-footer></library-footer>
+

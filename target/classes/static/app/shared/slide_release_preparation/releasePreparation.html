@@ -1,0 +1,9 @@
+<section class="slider1">
+    <div ng-repeat="r in ReleasePreparation">
+        <a ui-sref="product({bookID: r.bookID})"><img ng-src="{{r.image}}"></a>
+        <h4>{{r.bookName}}</h4>
+        <a ui-sref="author({authorID: r.author.authorID})"><h5>{{r.author.authorName}}</h5></a>
+        <div class="rate"></div>
+        <span>{{r.price}}</span>
+    </div>
+</section>

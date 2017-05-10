@@ -1,0 +1,89 @@
+<sale-image></sale-image>
+
+<library-header></library-header>
+
+<div class="container">
+    <div class="row header-bottom" style="border-bottom: 1px solid #C4C4C4;">
+        <div class="col-md-3 col-sm-12 col-xs-12 category" style="padding:0px">
+            <div class="menu-heading">
+                <span class="glyphicon glyphicon-align-justify" style="color: white"></span><span>Danh mục ebook</span>
+            </div>
+        </div>
+
+        <div class="col-md-9 col-sm-12 col-xs-12">
+            <div class="row nav">
+                <div class="col-md-8 col-sm-8 col-xs-12 nav-left">
+                    <ul>
+                        <li><a href="">KOMO TOP</a></li>
+                        <li style="padding-left: 40px"><a href="">KOMO</a></li>
+                        <li style="padding-left: 40px"><a href="">MY KOMO</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 col-sm-4 hidden-xs nav-right">
+                    <ul>
+                        <li><a href="#"><img src="assets/image/mn_blog.png"></a></li>
+                        <li><a href="#"><img src="assets/image/mn_taiapp.png"></a></li>
+                    </ul>
+                </div>
+
+                <div class="visible-xs nav-right" style="margin: 0 auto;width: 62%">
+                    <ul>
+                        <li><a href="#"><img src="assets/image/mn_blog.png"></a></li>
+                        <li><a href="#"><img src="assets/image/mn_taiapp.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div> <!-- End header-bottom -->
+
+<div class="container">
+    <div class="row" style="margin-bottom: 15px;">
+        <div class="col-md-12 col-sm-12 col-xs-12" style="padding-bottom: 15px;">
+            <a ui-sref="home" style="color: #00917D;">Trang chủ</a><span>» Tác giả » {{authorData1.authorName}}</span>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-4">
+            <a href=""><img ng-src="{{authorData1.authorImage}}" width="70%"></a>
+        </div>
+        <div class="col-md-8 col-sm-8 col-xs-8">
+            <h4>{{authorData1.authorName}}</h4>
+            <p>{{authorData1.story}}</p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12" style="padding-bottom: 15px;">
+            <h3 style="color: #025959;">Các tác phẩm đã viết</h3>
+            <hr/>
+            <span style="padding-right: 10px;">Xem thêm</span>
+            <select>
+                <option value="volvo" selected>Từ mới đến cũ</option>
+                <option value="saab">Từ cũ đến mới</option>
+                <option value="vw">Tên: Từ A đến Z</option>
+                <option value="audi" >Tên : Từ Z đến A</option>
+                <option value="vw">Giá : Từ thấp đến cao</option>
+                <option value="vw">Giá : Từ cao đến thấp</option>
+            </select>
+            <a href="#"><span class="glyphicon glyphicon-list" style="font-size: 15px;color: #025959;"></span></a>
+
+        </div>
+
+        <center>
+            <div class="col-md-3 col-sm-3 col-xs-12" ng-repeat="c in authorData2">
+            <a ui-sref="product({bookID:c.bookID})"><img src="{{c.image}}" width="60%"></a>
+            <h4 style="color: #F9A93B;">{{c.bookName}}</h4>
+            <a ui-sref="author({authorID:c.author.authorID})">
+                <p style="color:#C4C4C4;">{{c.author.authorName}}</p>
+            </a>
+            <div class="rate"></div>
+            <span style="color: #D31A64;">{{c.price}}</span>
+        </div>
+        </center>
+    </div>
+</div>
+
+<library-footer></library-footer>

@@ -1,0 +1,36 @@
+<div>
+    <form >
+        <table>
+            <tr>
+                <td>Tên đăng nhập</td>
+                <td><input type="text" name="username" ng-model="data.username" required></td>
+            </tr>
+            <tr>
+                <td>Mật khẩu</td>
+                <td><input type="text" name="password" ng-model="password" required></td>
+            </tr>
+            <tr>
+                <td>Họ và tên</td>
+                <td><input type="text" name="name" ng-model="data.name" required></td>
+            </tr>
+            <tr>
+                <td>Điện thoại</td>
+                <td><input type="email" name="phone" ng-model="data.phone" required></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="number" name="email" ng-model="data.email" required></td>
+            </tr>
+            <tr>
+                <th>
+                    <button type="submit">Đăng Ký</button>
+                </th>
+                <th>
+                    <a ui-sref="home">Trang chủ</a>
+                </th>
+            </tr>
+        </table>
+        <br/>
+        {{data | json}}
+    </form>
+</div>

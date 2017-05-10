@@ -1,0 +1,322 @@
+<sale-image></sale-image>
+
+<library-header></library-header>
+
+<div class="container">
+    <div class="row header-bottom" style="border-bottom: 1px solid ">
+        <div class="col-md-3 col-sm-12 col-xs-12 category" style="padding:0px">
+            <div class="menu-heading">
+                <span class="glyphicon glyphicon-align-justify" style="color: white"></span><span>Danh mục ebook</span>
+            </div>
+        </div>
+
+        <div class="col-md-9 col-sm-12 col-xs-12">
+            <div class="row nav">
+                <div class="col-md-8 col-sm-8 col-xs-12 nav-left">
+                    <ul>
+                        <li><a href="">KOMO TOP</a></li>
+                        <li style="padding-left: 40px"><a href="">KOMO</a></li>
+                        <li style="padding-left: 40px"><a href="">MY KOMO</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 col-sm-4 hidden-xs nav-right">
+                    <ul>
+                        <li><a href="#"><img src="assets/image/mn_blog.png"></a></li>
+                        <li><a href="#"><img src="assets/image/mn_taiapp.png"></a></li>
+                    </ul>
+                </div>
+
+                <div class="visible-xs nav-right" style="margin: 0 auto;width: 62%">
+                    <ul>
+                        <li><a href="#"><img src="assets/image/mn_blog.png"></a></li>
+                        <li><a href="#"><img src="assets/image/mn_taiapp.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- End header-bottom -->
+
+<div class="container">
+    <div class="row content" >
+        <div class="col-md-12 col-sm-12 col-xs-12" style="padding-bottom: 15px;">
+            <a href="#">Trang chủ</a> <span>»</span>
+            <a href="">{{ReleasePreparation.category.categoryName}}</a><span>»</span>
+            <span>{{ReleasePreparation.bookName}}</span>
+        </div>
+        <div class="co-md-12 col-sm-12 col-xs-12">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-3">
+                    <a href=""><img src="{{ReleasePreparation.image}}" width="100%"></a>
+                </div>
+                <div class="col-md-9 col-sm-9 col-xs-9">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="row" style="border-bottom: 1px solid #AFAFAF;padding-bottom: 20px; ">
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <h4>{{ReleasePreparation.bookName}}</h4>
+                                    <a ui-sref="author({authorID:ReleasePreparation.author.authorID})" style="color: #C4C4C4;"><h5><img src="assets/Image/icon_tacgia.png" style="width: 12px;padding-right: 5px">{{ReleasePreparation.author.authorName}}</h5></a>
+                                    <div class="rate"></div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-12" style="border:1px solid #AFAFAF;border-radius: 10px;padding: 15px;">
+                                    <span class="glyphicon glyphicon-ok" style="padding-right: 7px;color: #1FA999"></span><b>THỨ BA THÁI HÀ</b><span> - Giảm 30% tất cả ebook Thái Hà Books ngày 13/12/2016 »</span>
+                                    <a href="" style="color:#1FA999 ">xem chi tiết</a> <br/><br/>
+                                    <span class="glyphicon glyphicon-ok" style="padding-right: 7px;color: #1FA999"></span><b>[Ebook phát hành TRƯỚC sách giấy] Những Người Tạo Ra Hiện Thực - Tập 2 » </b><a href="" style="color:#1FA999 ">xem chi tiết</a> <br/><br/>
+                                    <span class="glyphicon glyphicon-ok" style="padding-right: 7px;;color: #1FA999"></span><b>[Ebook MỚI phát hành]</b><a href="" style="color:#1FA999 "> Mỹ Sơn - Thung Lũng Thần Linh </a> <span>» Mời bạn đón đọc!</span> <br/><br/>
+                                    <span class="glyphicon glyphicon-ok" style="padding-right: 7px;;color: #1FA999"></span>Tái bản 4 tác phẩm của <a href="" style="color:#1FA999 ">Thụy Vũ </a>- nhà văn nổi tiếng miền Nam trước 1975 »<a href="" style="color:#1FA999 "> xem chi tiết</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <b>eBook</b><br/>
+                                </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-4 col-xs-4">
+                                            <span>Giá bán:</span> <span style="color: #D31A64">{{ReleasePreparation.price}} </span>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-4">
+                                            <span>Giảm:</span> <span style="color: #D31A64">0 % </span>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-4">
+                                            <span>Còn:</span> <span style="color: #D31A64">{{ReleasePreparation.price}} </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <span style="color: #AFAFAF">Giá thuê:</span><span style="color: #D31A64">2.000</span><span style="color: #AFAFAF">đ/ngày</span>
+                                </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="row">
+                                        <div class="col-md-3 col-sm-3 col-xs-3">
+                                            <div class="row">
+                                                <div class="col-md-12 col-sm-12 col-xs-12" style="margin-bottom: 10px;">
+                                                    <button type="button" class="btn btn-warning" style="width: 100%"><span class="glyphicon glyphicon-shopping-cart" ></span>Mua ngay</button>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 col-xs-6" style="padding-right:1px">
+                                                    <button type="button" class="btn btn-warning" style="width: 100%"><span class="glyphicon glyphicon-gift">Tặng</button>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 col-xs-6"  style="padding-left:1px">
+                                                    <button type="button" class="btn btn-warning" style="width: 100%"><span class="glyphicon glyphicon-time">Thuê</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-4">
+                                            <span class="glyphicon glyphicon-triangle-right" style="color: #1FA998;font-size: 7px"></span><a href="" style="color: #1FA998;">Cho vào danh sách muốn đọc</a><br/><br/>
+                                            <span class="glyphicon glyphicon-triangle-right" style="color: #1FA998;font-size: 7px"></span><a href="" style="color: #1FA998"> Cách thuê, tặng, mượn/ cho mượn</a>
+                                        </div>
+                                        <div class="col-md-5 col-sm-5 col-xs-5">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 " >
+            <h3>Có thể bạn cũng thích những ebook này</h3>
+            <hr/>
+            <slide-new></slide-new>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 " >
+            <div class="row">
+                <div class="col-md-9 col-sm-9 col-xs-12">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <h3>Thông tin ebook</h3>
+                            <hr/>
+                            <h5>Tóm tắt tác phẩm</h5>
+                            <p>
+                                {{ReleasePreparation.content}}
+                            </p>
+                            <hr/>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <h5>Tác giả</h5>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="row">
+                                <div class="col-md-3 col-sm-3 col-xs-3">
+                                    <img src="{{ReleasePreparation.author.authorImage}}" width="100%">
+                                </div>
+                                <div class="col-md-9 col-sm-9 col-xs-9">
+                                    <h4>{{ReleasePreparation.author.authorName}}</h4>
+                                    <p>{{ReleasePreparation.author.story}}</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <h3>Đánh giá của KOMO</h3>
+
+                                    <p><b>{{ReleasePreparation.bookName}}</b> thật sự là một bảo bối vô giá đối với người xuất gia.
+
+                                        <b>{{ReleasePreparation.bookName}}</b> trình bày một cách hết sức rõ ràng những bài kinh, kệ, tán và các nghi thức từ thọ trai cho đến chúc tán để người xuất gia dễ dàng áp dụng cho quá trình hành trì tu tập của mình. Từ những kinh cắt đứt phiền não, sân hận đến những kinh chỉ dẫn cách quán niệm, luyện tập hơi thở để khai thông bể chấp đều được trình bày một cách rõ ràng, dễ hiểu nhất bằng tấm lòng Bồ tát của tác giả Thiền sư Thích Nhất Hạnh.</p>
+
+                                    <p>Đời là bể khổ vô nhai. Sống giữa chốn hồng trần này, giữa bể tham sân si cũng là lúc con người ta đắm chìm trong biển khổ hận, đau thương, <b>{{ReleasePreparation.bookName}}</b> không chỉ là pháp bảo riêng của người xuất gia, nó còn là một “liều thuốc” tuyệt diệu cho những ai muốn tìm lại sự bình yên trong tâm hồn mình giữa trần gian nhiều vướng bận.</p>
+
+                                    <p>Những kinh điển cao siêu, những khái niệm, phạm trù trừu tượng của cửa Phật đã được chọn lọc từ những kinh tiêu biểu nhất, được dịch ra thành ngôn ngữ trong sáng, đã trở nên sáng rõ, dễ hiểu cho tất cả những người có tâm nguyện muốn hành trì giải thoát khỏi bể trầm luân.</p>
+
+                                    <p><b>{{ReleasePreparation.bookName}}</b> cũng như những cuốn sách về Thiền khác của Thiền sư Thích Nhất Hạnh, nổi bật, thu hút người đọc nhờ những ví dụ, dẫn chứng hết sức cụ thể được lấy không chỉ từ kinh điển mà còn từ cuộc sống đời thường. Ngài quan sát, ghi nhận, chiêm nghiệm, rút ra bài học, đúc kết thành kinh nghiệm và truyền tải vào những tác phẩm của mình một cách cô đọng, súc tích nhưng dễ hiểu nhất. Chính điều đó khiến cho các tác phẩm của ngài dù trình bày về giáo lý nhà Phật vẫn không hề nặng nề, khô khan mà luôn sinh động và đầy màu sắc.</p>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <h3>Nhận định chuyên gia</h3>
+
+                                    <p>Sách <b>{{ReleasePreparation.bookName}}</b> là một pháp bảo, quý giá vô cùng. Các vị giáo thọ của Đạo Tràng Mai Thôn đã để ra mười lăm năm để soạn tập, phiên dịch và xây dựng lên nó. Văn dịch sáng sủa và đẹp đẽ, diễn đạt được ý kinh một cách rõ ràng và tự nhiên, rất dễ tụng đọc. Các kinh điển được chọn lọc trong kinh tạng lại là những kinh tiêu biểu và căn bản, kinh nào cũng thiết yếu cho công phu hành trì của người xuất gia. Những bài kệ tán và xướng tụng hay nhất trong sách <b>{{ReleasePreparation.bookName}}</b> cũ đều đã được phiên dịch rất khéo léo, thêm vào đó còn có rất nhiều bài kệ tán, phát nguyện và sám nguyện mới rất thích hợp với căn cơ và thời đại.</p>
+
+                                    <p>Sách <b>{{ReleasePreparation.bookName}}</b> này nếu được đem ra áp dụng sớm sẽ tạo ra rất nhiều sinh khí mới cho thiền môn và mở ra một kỷ nguyên mới cho sự thực tập.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr/>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="row sidebar-download" >
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 col-xs-12" style="
+								padding: 0px;">
+                                    <div style="background-color:#4E8F7C;width: 100%; ">
+                                        <h3>Ebook cùng chủ đề</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row rate-component">
+                                <div class="col-md-4 col-sm-4 col-xs-4" style="padding-right: 0px;">
+                                    <a href="#"><img src="assets/image/ebook-thems/h1.jpg" width="100%"></a>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                    <h4>Ngắm Nhìn Tĩnh Tại Ngắm Nhìn Tĩnh Tại</h4>
+                                    <img src="assets/image/icon_tacgia.png" width="8px"><span style="padding-left: 8px;color:#868686">Lê Hoàng</span><br/>
+                                    <div class="img-rate"></div>
+                                    <span style="color: #D31A64">35.000 đ</span>
+                                </div>
+                            </div>
+                            <div class="row rate-component">
+                                <div class="col-md-4 col-sm-4 col-xs-4" style="padding-right: 0px;">
+                                    <a href="#"><img src="assets/image/ebook-thems/h8.jpg" width="100%"></a>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                    <h4>Kinh Kim Cương Gươm Báu Cắt Đứt Phiền Não Kinh Kim Cương...</h4>
+                                    <img src="assets/image/icon_tacgia.png" width="8px"><span style="padding-left: 8px;color:#868686">Lê Hoàng</span><br/>
+                                    <div class="img-rate"></div>
+                                    <span style="color: #D31A64">35.000 đ</span>
+                                </div>
+                            </div>
+                            <div class="row rate-component">
+                                <div class="col-md-4 col-sm-4 col-xs-4" style="padding-right: 0px;">
+                                    <a href="#"><img src="assets/image/ebook-thems/h2.jpg" width="100%"></a>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                    <h4>Những Lời Dạy Từ Các Thiền Sư Việt Nam Xưa Những Lời Dạy Từ...</h4>
+                                    <img src="assets/image/icon_tacgia.png" width="8px"><span style="padding-left: 8px;color:#868686">Lê Hoàng</span><br/>
+                                    <div class="img-rate"></div>
+                                    <span style="color: #D31A64">35.000 đ</span>
+                                </div>
+                            </div>
+                            <div class="row rate-component">
+                                <div class="col-md-4 col-sm-4 col-xs-4" style="padding-right: 0px;">
+                                    <a href="#"><img src="assets/image/ebook-thems/h3.jpg" width="100%"></a>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                    <h4>Nghệ Thuật Thiền Định Nghệ Thuật Thiền Định</h4>
+                                    <img src="assets/image/icon_tacgia.png" width="8px"><span style="padding-left: 8px;color:#868686">Lê Hoàng</span><br/>
+                                    <div class="img-rate"></div>
+                                    <span style="color: #D31A64">35.000 đ</span>
+                                </div>
+                            </div>
+                            <div class="row rate-component">
+                                <div class="col-md-4 col-sm-4 col-xs-4" style="padding-right: 0px;">
+                                    <a href="#"><img src="assets/image/ebook-thems/h4.jpg" width="100%"></a>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                    <h4>Thiền Tập Thiền Tập</h4>
+                                    <img src="assets/image/icon_tacgia.png" width="8px"><span style="padding-left: 8px;color:#868686">Lê Hoàng</span><br/>
+                                    <div class="img-rate"></div>
+                                    <span style="color: #D31A64">35.000 đ</span>
+                                </div>
+                            </div>
+                            <div class="row rate-component">
+                                <div class="col-md-4 col-sm-4 col-xs-4" style="padding-right: 0px;">
+                                    <a href="#"><img src="assets/image/ebook-thems/h5.jpg" width="100%"></a>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                    <h4>Bây Giờ Mới Thấy Bây Giờ Mới Thấy</h4>
+                                    <img src="assets/image/icon_tacgia.png" width="8px"><span style="padding-left: 8px;color:#868686">Lê Hoàng</span><br/>
+                                    <div class="img-rate"></div>
+                                    <span style="color: #D31A64">35.000 đ</span>
+                                </div>
+                            </div>
+                            <div class="row rate-component">
+                                <div class="col-md-4 col-sm-4 col-xs-4" style="padding-right: 0px;">
+                                    <a href="#"><img src="assets/image/ebook-thems/h6.jpg" width="100%"></a>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                    <h4>Tự chữa lành</h4>
+                                    <img src="assets/image/icon_tacgia.png" width="8px"><span style="padding-left: 8px;color:#868686">Lê Hoàng</span><br/>
+                                    <div class="img-rate"></div>
+                                    <span style="color: #D31A64">35.000 đ</span>
+                                </div>
+                            </div>
+                            <div class="row rate-component">
+                                <div class="col-md-4 col-sm-4 col-xs-4" style="padding-right: 0px;">
+                                    <a href="#"><img src="assets/image/ebook-thems/h7.png" width="100%"></a>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                    <h4>Trần Nhân Tông - Đức...</h4>
+                                    <img src="assets/image/icon_tacgia.png" width="8px"><span style="padding-left: 8px;color:#868686">Lê Hoàng</span><br/>
+                                    <div class="img-rate"></div>
+                                    <span style="color: #D31A64">35.000 đ</span>
+                                </div>
+                            </div>
+                            <div class="row rate-component">
+                                <div class="col-md-4 col-sm-4 col-xs-4" style="padding-right: 0px;">
+                                    <a href="#"><img src="assets/image/ebook-thems/h9.jpg" width="100%"></a>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                    <h4>Thiền Và Sức Khỏe</h4>
+                                    <img src="assets/image/icon_tacgia.png" width="8px"><span style="padding-left: 8px;color:#868686">Lê Hoàng</span><br/>
+                                    <div class="img-rate"></div>
+                                    <span style="color: #D31A64">35.000 đ</span>
+                                </div>
+                            </div>
+                            <div class="row rate-component">
+                                <div class="col-md-4 col-sm-4 col-xs-4" style="padding-right: 0px;">
+                                    <a href="#"><img src="assets/image/ebook-thems/h10.jpg" width="100%"></a>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                    <h4>Đức Phật Dạy Pháp Thấy Tánh Đức Phật Dạy Pháp...</h4>
+                                    <img src="assets/image/icon_tacgia.png" width="8px"><span style="padding-left: 8px;color:#868686">Lê Hoàng</span><br/>
+                                    <div class="img-rate"></div>
+                                    <span style="color: #D31A64">35.000 đ</span>
+                                </div>
+                            </div>
+                            <div class="row rate-component">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <center><img src="assets/image/icon_xemall.gif"><a href="#" style="color: #65B5A7;text-decoration: none;">Xem tất cả</a></center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- End content -->
+
+<library-footer></library-footer>

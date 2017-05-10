@@ -1,0 +1,68 @@
+<sale-image></sale-image>
+
+<library-header></library-header>
+
+<div class="container">
+    <div class="row header-bottom" style="border-bottom: 1px solid #C4C4C4">
+        <div class="col-md-3 col-sm-12 col-xs-12 category" style="padding:0px">
+            <div class="menu-heading">
+                <span class="glyphicon glyphicon-align-justify" style="color: white"></span><span>Danh mục ebook</span>
+            </div>
+        </div>
+
+        <div class="col-md-9 col-sm-12 col-xs-12">
+            <div class="row nav">
+                <div class="col-md-8 col-sm-8 col-xs-12 nav-left">
+                    <ul>
+                        <li><a href="">KOMO TOP</a></li>
+                        <li style="padding-left: 40px"><a href="">KOMO</a></li>
+                        <li style="padding-left: 40px"><a href="">MY KOMO</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 col-sm-4 hidden-xs nav-right">
+                    <ul>
+                        <li><a href="#"><img src="assets/image/mn_blog.png"></a></li>
+                        <li><a href="#"><img src="assets/image/mn_taiapp.png"></a></li>
+                    </ul>
+                </div>
+
+                <div class="visible-xs nav-right" style="margin: 0 auto;width: 62%">
+                    <ul>
+                        <li><a href="#"><img src="assets/image/mn_blog.png"></a></li>
+                        <li><a href="#"><img src="assets/image/mn_taiapp.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- End header-bottom -->
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12" style="margin-bottom: 15px;">
+            <a ui-sref="home" >Trang chủ</a> <span>» Kinh tế,kinh doanh</span>
+        </div>
+
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <img src="../assets/image/category/h1.png" width="100%">
+        </div>
+    </div>
+
+    <hr/>
+    <div class="row">
+        <div class="col-md-3 col-sm-4 col-xs-12" ng-repeat="c in categoryDetail">
+            <center >
+                <a ui-sref="product({bookID: c.bookID})"><img src="{{c.image}}" width="70%"></a>
+                <h4 style="color: #F58220;font-size: 15px;width: 100%;" >{{c.bookName}}</h4>
+                <a ui-sref="author({authorID: c.author.authorID})"><h5 style="color: #C4C4C4">{{c.author.authorName}}</h5></a>
+                <div class="rate"></div>
+                <span style="color: #D31A64">{{c.price}}</span>
+            </center>
+        </div>
+    </div>
+</div>
+
+<library-footer></library-footer>

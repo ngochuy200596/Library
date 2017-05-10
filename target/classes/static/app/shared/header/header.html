@@ -1,0 +1,65 @@
+<div class="container">
+    <div class="row header">
+        <div class="col-md-2 hidden-xs hidden-sm">
+            <a href="index.html"><img src="assets/image/logo.png"></a>
+        </div>
+
+        <center>
+            <div class="visible-sm visible-xs">
+                <a href="index.html"><img src="assets/image/logo.png"></a>
+            </div>
+        </center>
+
+        <div class="col-md-7 col-sm-12 col-xs-12">
+            <div class="search-form">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Tìm Kiếm...">
+                    <span class="input-group-btn">
+						    	<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+						    </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 login" >
+            <img src="assets/image/user.png" style="width: 40px;"/>
+            <a href="#" data-toggle="modal" data-target="#myModal">Đăng nhập</a>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog modal-sm">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title" style="text-align: center;color: #066A75">ĐĂNG NHẬP</h4>
+                        </div>
+                        <div class="modal-body">
+
+                            <form method="post" name="f">
+                                <div class="input-group" style="padding: 20px 0px 20px 0px">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                    <input id="username" type="text" class="form-control" name="username" placeholder="Tài khoản">
+                                </div>
+                                <div class="input-group" style="padding: 0px 0px 20px 0px">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                    <input id="password" type="password" class="form-control" name="password" placeholder="Mật khẩu">
+                                </div>
+                                <center><input type="submit" name="submit" class="btn btn-primary" value="Đăng Nhập" style="margin-top: 10px;"></input></center>
+                            </form>
+
+                        </div>
+                        <div class="modal-footer">
+
+                            <a ui-sref="add" style="float: right;color: #066A75;">Đăng ký tài khoản</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-1 col-sm-9 col-xs-6 support">
+            <a href="">Hỗ trợ</a>
+        </div>
+    </div>
+</div>  <!--End header -->

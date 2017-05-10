@@ -1,0 +1,9 @@
+<section class="slider1">
+    <div ng-repeat="g in giangsinh">
+        <a ui-sref="product({bookID: g.bookID})"><img ng-src="{{g.image}}"></a>
+        <h4>{{g.bookName}}</h4>
+        <a ui-sref="author({authorID: g.author.authorID})"><h5>{{g.author.authorName}}</h5></a>
+        <div class="rate"></div>
+        <span>{{g.price}}</span>
+    </div>
+</section>
